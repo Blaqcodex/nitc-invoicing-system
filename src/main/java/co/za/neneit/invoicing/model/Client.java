@@ -16,4 +16,25 @@ public class Client {
         this.address = address;
         this.taxNumber = taxNumber;
     }
+    
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getTaxNumber() {
+        return taxNumber;
+    }
+
+    @Override
+    public String toString() {
+        return name + " <" + email + ">";
+    }
 }
